@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <script>
+        /*5º exercício
+            Dado o seguinte vetor de objetos:
+
+            var usuarios = [
+            {
+            nome: "Diego",
+            habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+            nome: "Gabriel",
+            habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            }
+            ];
+
+            Escreva uma função que produza o seguinte resultado:
+
+            O Diego possui as habilidades: Javascript, ReactJS, Redux
+            O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir*/
+
+        var usuarios = [{
+                nome: "Diego",
+                habilidades: ["Javascript", "ReactJS", "Redux"]
+            },
+            {
+                nome: "Gabriel",
+                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+            },
+            {
+                nome: "Caio",
+                habilidades: ["C#", ".Net", "Windows Forms"]
+            }
+        ]; //array com três objetos 
+
+        function frase(usuarios) {
+            for(var user of usuarios){ //for se repete de acordo com a quantidade de objetos dentro do array
+                console.log('O '+user.nome+' possui as seguintes habilidades: '+ user.habilidades.join()); //podemos editar dentro do join o formato do separador que queremos utilizar ex: join('-')
+            }
+        }
+
+        frase(usuarios);
+
+    </script>
+</body>
+
+</html>

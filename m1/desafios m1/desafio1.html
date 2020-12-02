@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <script>
+        
+        /*1º exercício
+            Crie uma função que dado o objeto a seguir:*/
+
+        var endereco = {
+            rua: 'Avenida Guarani',
+            numero: 252,
+            bairro: 'Jd Proença',
+            cidade: 'Campinas',
+            uf: 'SP'
+        }; //utilizando um objeto
+
+        var enderecos = ['Avenida Guarani', 252, 'Jd Proença', 'Campinas', 'SP']; //utilizando posições do vetor
+
+        console.log('Utilizando a partir de um objeto = {}');
+        console.log('O usuário mora em ' + endereco.cidade + ' / ' + endereco.uf + ' no bairro ' +
+            endereco.bairro + ', na rua ' + endereco.rua + ' com nº ' + endereco.numero);
+
+        console.log('Utilizando a partir de posições de um vetor = []');
+        console.log('O usuário mora em ' + enderecos[3] + ' / ' + enderecos[4] + ' no bairro ' +
+            enderecos[2] + ', na rua ' + enderecos[0] + ' com nº ' + enderecos[1]);
+
+
+        
+        
+    </script>
+</body>
+
+</html>

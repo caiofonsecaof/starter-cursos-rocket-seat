@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <script>
+        
+        /*3º exercício
+            Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+            e retorna um booleano true/false caso exista ou não.*/
+
+
+        /*utilizando o método include que já retorna verdadeiro ou falso*/
+
+        function temHabilidade1(skills) {
+            return skills.includes("JavaScript");
+        }
+
+        let skills1 = ["C#", "ReactJS", "Flutter", "React Native"];
+        var resultado1 = temHabilidade1(skills1);
+        console.log(resultado1);
+
+        /*lógica sem utilização de funções internas*/
+        function temHabilidade2(skills) {
+            for (var item of skills) {
+                if (item == "JavaScript") {
+                    return true;
+                } else {
+                    return false;
+                }
+
+            }
+        }
+
+        var skills2 = ["JavaScript", "ReactJS", "Flutter", "React Native"];
+        var resultado2 = temHabilidade2(skills2);
+        console.log(resultado2);
+    </script>
+</body>
+
+</html>

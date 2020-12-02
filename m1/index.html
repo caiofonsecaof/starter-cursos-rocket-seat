@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <h1>Aulas JavaScript</h1>
+</header>
+
+<body>
+    <script>
+        var nome = 'Caio'; //variáveis não estáticas
+        /*nome = 2; valores diferentes para a mesma variável*/
+        var idade = 29; //inteiro
+        var peso = 82.5; //real
+        var humano = true; //booleano
+
+        var alunos = ['Caio','Annete','Lucas']; //vetor
+
+        /*var aluno = {
+            nome: 'Caio',
+            idade:29,
+            peso:82.5,
+            humano:true,
+        }; */ //objeto
+
+        var aluno = {
+            nome: alunos[2], //podemos integrar a variável chamando pela posição
+            idade:29,
+            peso:82.5,
+            humano:true,
+        }; //objeto
+
+        console.log(aluno);
+        console.log(aluno.nome); //chamamos pela condição do obj
+        
+        console.log(alunos);
+        console.log(alunos[1]);//chamamos pela posição no vetor
+    
+    </script>
+</body>
+<footer>
+    <p>footer</p>
+</footer>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <h1>Aulas JavaScript</h1>
+</header>
+
+<body>
+    <script>
+
+        //and &&
+        var sexo = 'M',
+            idade = 23;
+        if (sexo === 'M' && idade >= 18) {
+            console.log('Ok And');
+        }else if (sexo === 'M' || idade <= 18) {
+            console.log('Ok Or');
+        }
+
+        //or ||
+        var sexo = 'M',
+            idade = 17;
+        if (sexo === 'M' && idade >= 18) {
+            console.log('Ok And');
+        }else if (sexo === 'M' || idade <= 18) {
+            console.log('Ok Or');
+        }
+
+        //not !=
+        var sexo = 'F';
+        if (sexo !== 'M') {
+            console.log('Ok Not(diferente)');
+        }
+
+        //armazenar o valor da condição dentro da variável
+        var sexo = 'M';
+        var masculino;
+
+        if (sexo === 'M') {
+            masculino = true;
+        }else{
+            masculino = false;
+        }
+
+        console.log(masculino);
+
+        //refatorando a sintaxe acima, podemos passar o parâmetro diretamente para a variável
+        var sexo = 'M';
+        var masculino = (sexo === 'F');
+        console.log(masculino);
+
+    </script>
+</body>
+
+<footer>
+    <p>footer</p>
+</footer>
+
+</html>

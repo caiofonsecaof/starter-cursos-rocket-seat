@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <h1>Aulas JavaScript</h1>
+</header>
+
+<body>
+    <script>
+        
+        //utilizando a estrutura if
+        function retornaSexoIf(sexo){
+            
+            if(sexo === 'M'){ // quando utilizamos 3 simbolos de "=" ele verifica o valor e o tipo da variavel sendo que ela precisa ser igual
+                return 'sexo masculino';
+            } else if(sexo == 'F') {
+                return 'sexo feminino';
+            } else {
+                return 'Outro';
+            }
+        }
+
+        var resultado = retornaSexoIf('F')
+        console.log(resultado);
+
+        //utilizando a estrutura switch-case
+        function retornaSexoCase(sexo){
+            
+            switch(sexo){ 
+                case 'M':
+                return 'sexo masculino';
+                case 'F': 
+                return 'sexo feminino';
+               default:
+                return 'Outro';
+            } 
+        }
+
+        var resultado2 = retornaSexoCase('M')
+        console.log(resultado2);
+
+    </script>
+</body>
+
+<footer>
+    <p>footer</p>
+</footer>
+
+</html>
